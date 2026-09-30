@@ -10,7 +10,8 @@ async function readfilewithdelay(){
     await new Promise((resolve , reject) => {
         setTimeout(resolve , 1500)
     })
-    await readfile;
+    let products = await readfile();
+    return products;
 }
 
 
